@@ -116,7 +116,7 @@
     "country": "Mongolia",
     "point": 100,
     "type": "suragch",
-    "created_at": "Tuguldur",
+    "created_at": "2026/03/25",
     "password": "temujin123"
 },
 {
@@ -298,6 +298,125 @@
     "type": "suragch",
     "created_at": "2026-03-11",
     "password": "temujin123"
+},
+{
+    "id": 26,
+    "first_name": "Adiyakhuu",
+    "email": "adiyahuu@nhs.edu.mn",
+    "last_name": "Gendenpil",
+    "age": 48,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-10-11",
+    "password": "temujin123"
+},
+{
+    "id": 27,
+    "first_name": "Dul",
+    "email": "dul@nhs.edu.mn",
+    "last_name": "Gantulga",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
+},
+{
+    "id": 28,
+    "first_name": "Batkhishig",
+    "email": "batkhishig@nhs.edu.mn",
+    "last_name": "Medku",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
+},
+{
+    "id": 29,
+    "first_name": "Tegshdelger",
+    "email": "tegshdelger@nhs.edu.mn",
+    "last_name": "Medku",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
+},
+{
+    "id": 30,
+    "first_name": "Barkhasbold",
+    "email": "barkhasbold@nhs.edu.mn",
+    "last_name": "Medku",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
+},
+{
+    "id": 31,
+    "first_name": "Bat-Orgil",
+    "email": "batorgil@nhs.edu.mn",
+    "last_name": "Medku",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
+},
+{
+    "id": 32,
+    "first_name": "Usukhbaatar",
+    "email": "usukhbaatar@nhs.edu.mn",
+    "last_name": "Medku",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
+},
+{
+    "id": 33,
+    "first_name": "Azjargal",
+    "email": "azjargal@nhs.edu.mn",
+    "last_name": "Medku",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
+},
+{
+    "id": 34,
+    "first_name": "Lavenia",
+    "email": "lavenia@nhs.edu.mn",
+    "last_name": "Lawakele",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
+},
+{
+    "id": 1,
+    "first_name": "Javzandulam",
+    "email": "javzandulamn@nhs.edu.mn",
+    "last_name": "medku",
+    "age": 25,
+    "country": "Mongolia",
+    "point": 100,
+    "type": "teacher",
+    "created_at": "2026-03-11",
+    "password": "temujin123"
 }
-
 ]
