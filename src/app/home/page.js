@@ -9,7 +9,7 @@ export default function Home() {
         </a>
         
          <div className="w-50 h-2/5 bg-white rounded-full ml-5 flex items-center pl-1">
-         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5"></img>
+         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5" alt="Search"></img>
          <p className="text-gray-800 font-mono font-thin ml-1">Search . . .</p>
          </div>
       </div>
@@ -37,12 +37,17 @@ export default function Home() {
         </a>
 
         <hr className="opacity-50"></hr>
+
+        <a href="lesson">
+        <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Users -</h2>
+        </a>
+        <hr className="opacity-50"></hr>
       </div>
       <div className="w-4/5 h-full flex p-20">
       <div className="w-150 h-50 ">
         <h1 className="text-8xl text-[#141414] font-mono font-extrabold">Welcome to Chartreused.</h1>
         <div className="w-80 h-full">
-          <p className="text-[#141414] font-mono mt-5"> We've built an extraordinary platform for people who wants to expand their music territory.</p>
+          <p className="text-[#141414] font-mono mt-5"> We&apos;ve built an extraordinary platform for people who wants to expand their music territory.</p>
         </div>
         <p className="text-black font-mono font-bold text-xl mt-60 ml-110 absolute">Bewitched - Studio Album</p>
         <p className="text-black font-mono font-regular text-lg mt-70 ml-157 absolute">By Laufey</p>

@@ -7,7 +7,7 @@ export default function Home() {
 <a href="home">
  <p className="font-mono text-2xl ml-50">Chartreused |</p>
         </a>         <div className="w-50 h-2/5 bg-white rounded-full ml-5 flex items-center pl-1">
-         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5"></img>
+         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5" alt="Search"></img>
          <p className="text-gray-800 font-mono font-thin ml-1">Search . . .</p>
          </div>
       </div>
@@ -48,7 +48,7 @@ export default function Home() {
         
       </div>
       <div className="w-140 h-140 bg-black ml-50 mt-40 shadow-xl/40">
-        <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Igor_-_Tyler%2C_the_Creator.jpg" className="w-full"></img>
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Igor_-_Tyler%2C_the_Creator.jpg" className="w-full" alt="Album Cover"></img>
       </div>
       
       

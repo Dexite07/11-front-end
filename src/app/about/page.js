@@ -7,7 +7,7 @@ export default function Home() {
 <a href="home">
  <p className="font-mono text-2xl ml-50">Chartreused |</p>
         </a>         <div className="w-50 h-2/5 bg-white rounded-full ml-5 flex items-center pl-1">
-         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5"></img>
+         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5" alt="Search"></img>
          <p className="text-gray-800 font-mono font-thin ml-1">Search . . .</p>
          </div>
       </div>
@@ -40,20 +40,20 @@ export default function Home() {
       <div className="w-150 h-50 ">
         <h1 className="text-8xl text-[#141414] font-mono font-extrabold">What is  Chartreused?</h1>
         <div className="w-150 h-contain">
-          <p className="text-[#141414] font-mono mt-5"> We've built an extraordinary platform for people who wants to expand their music territory. Chartreused specializes in creating an oen platform for users to engage in inclusive global music hub where everyone can share their own personal playlists and charts.</p>
+          <p className="text-[#141414] font-mono mt-5"> We&apos;ve built an extraordinary platform for people who wants to expand their music territory. Chartreused specializes in creating an oen platform for users to engage in inclusive global music hub where everyone can share their own personal playlists and charts.</p>
         </div>
         <div className="w-170 h-contain">
-          <p className="text-[#141414] font-mono mt-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p className="text-[#141414] font-mono mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div className="w-150 h-contain">
-          <p className="text-[#141414] font-mono mt-5">If there is anything you would like to say about our website, feel free to contacts us via our website's "Contact" page.</p>
+          <p className="text-[#141414] font-mono mt-5">If there is anything you would like to say about our website, feel free to contacts us via our website&apos;s contact page.</p>
         </div>
         <p className="text-black font-mono font-bold text-xl mt-15 ml-116 absolute">Salad Days - Studio Album</p>
         <p className="text-black font-mono font-regular text-lg mt-24 ml-153 absolute">By Mac Demarco</p>
         
       </div>
       <div className="w-140 h-140 bg-black ml-50 mt-40 shadow-xl/40">
-        <img src="https://cdn-images.dzcdn.net/images/cover/96f16ccb3da4d231b72bc5de25a16202/0x1900-000000-80-0-0.jpg" className="w-full"></img>
+        <img src="https://cdn-images.dzcdn.net/images/cover/96f16ccb3da4d231b72bc5de25a16202/0x1900-000000-80-0-0.jpg" className="w-full" alt="Album Cover"></img>
       </div>
       
       

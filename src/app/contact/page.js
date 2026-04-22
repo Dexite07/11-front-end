@@ -7,7 +7,7 @@ export default function Home() {
 <a href="home">
  <p className="font-mono text-2xl ml-50">Chartreused |</p>
         </a>         <div className="w-50 h-2/5 bg-white rounded-full ml-5 flex items-center pl-1">
-         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5"></img>
+         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5" alt="Search"></img>
          <p className="text-gray-800 font-mono font-thin ml-1">Search . . .</p>
          </div>
       </div>
