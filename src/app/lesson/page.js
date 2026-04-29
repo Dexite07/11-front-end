@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import DataJson from "../utils/data.json";
 
@@ -16,21 +14,22 @@ export default function HomePage() {
   );
 
   return (
-    <div className="w-screen h-screen bg-[#141414]">
+    <div className="w-screen min-h-screen bg-[#141414]">
       <header>
-        <div className="bg-black w-full h-20 flex items-center pl-5 z-10 absolute">
+        <div className="bg-black w-full h-20 flex items-center pl-5 z-10 fixed top-0">
           <a href="home">
-            <p className="font-mono text-2xl ml-50">Chartreused |</p>
+            <p className="font-mono text-2xl">Chartreused |</p>
           </a>
 
-          <div className="w-50 h-2/5 bg-white rounded-full ml-5 flex items-center">
+          <div className="w-64 h-2/5 bg-white rounded-full ml-5 flex items-center relative">
             <img
               src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png"
-              className="w-5 h-5 absolute ml-1"
+              className="w-5 h-5 absolute ml-2"
+              alt="search"
             />
             <input
-              className="w-full h-full rounded-full text-gray-800 font-mono font-regular pl-7"
-              placeholder="Search . . ."
+              className="w-full h-full rounded-full text-gray-800 font-mono pl-8 outline-none"
+              placeholder="Search..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -38,66 +37,83 @@ export default function HomePage() {
         </div>
       </header>
 
-      <p className="">User Library</p>
+      <p className="text-white font-mono text-xl pt-24 pl-6">
+        User Library
+      </p>
 
-      <div className="bg-[#141414] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 p-6 pt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 p-6">
         {filteredData.length === 0 && (
-          <p className="text-white col-span-full font-mono italic">No results found</p>
+          <p className="text-white col-span-full font-mono italic">
+            No results found
+          </p>
         )}
 
         {filteredData.map((item, index) => (
           <div
             key={index}
-            className="w-70 h-contain bg-[#202020] border border-[#444444] rounded-4xl p-5 text-[#bbbbbb] font-mono shadow-xl/10"
+            className="bg-[#202020] border border-[#444444] rounded-3xl p-5 text-[#bbbbbb] font-mono shadow-xl/10"
           >
-            
-            <div className="font-semibold bg-[#333333] rounded-full mb-3 flex justify-end">
-              
-              {item.type === "teacher" ? (
-                <p className="w-full font-thin rounded-full pr-2 text-[#dcfc38] flex justify-end">
-                  {item.type}
-                </p>
-              ) : (
-                <p className="font-semibold rounded-full pr-2 text-[#555555] flex justify-end">
-                  {item.type}
-                </p>
-              )}
+            {/* Type */}
+            <div className="bg-[#333333] rounded-full mb-3 flex justify-end px-2">
+              <p
+                className={
+                  item.type === "teacher"
+                    ? "text-[#dcfc38] font-thin"
+                    : "text-[#555555] font-semibold"
+                }
+              >
+                {item.type}
+              </p>
             </div>
 
+            {/* Info */}
             <div className="flex">
               <p className="font-bold mr-2">First Name:</p>
-              {item.first_name}
+              <p>{item.first_name}</p>
             </div>
 
-            <div className="flex">
-              <p className="font-bold mr-2 mb-4">Last Name:</p>
-              {item.last_name}
+            <div className="flex mb-4">
+              <p className="font-bold mr-2">Last Name:</p>
+              <p>{item.last_name}</p>
             </div>
 
-            <div className="ml-5 flex">
-              <p className="mr-2 font-semibold">Age :</p>
-              {item.age}
+            <div className="ml-2 flex">
+              <p className="mr-2 font-semibold">Age:</p>
+              <p>{item.age}</p>
             </div>
 
-            <div className="ml-5 flex">
-              <p className="mr-2 font-semibold">Country :</p>
-              {item.country}
+            <div className="ml-2 flex">
+              <p className="mr-2 font-semibold">Country:</p>
+              <p>{item.country}</p>
             </div>
 
-            <div className="ml-5 flex">
-              <p className="mr-2 font-semibold">Points :</p>
-              {item.point}
+            <div className="ml-2 flex">
+              <p className="mr-2 font-semibold">Points:</p>
+              <p>{item.point}</p>
             </div>
 
             <div className="mt-5 flex">
-              <p className="mr-2 font-semibold">Created at :</p>
+              <p className="mr-2 font-semibold">Created:</p>
               <p className="opacity-50">{item.created_at}</p>
             </div>
-            <div className="border border-[#555555] rounded-xl mt-4">
-              <img src={item.image} className="opacity-10 rounded-xl hover:opacity-100 transition duration-300"></img>
+
+            {/* Image */}
+            <div className="border border-[#555555] rounded-xl mt-4 overflow-hidden">
+              <img
+                src={item.image}
+                alt="user"
+                className="opacity-20 hover:opacity-100 transition duration-300 w-full"
+              />
+            </div>
+            <div className="w-full h-contain mt-4">
+              <p>Items :</p>
+              <div className="w-full h-10 flex mt-2">
+                <img src={item.item1} alt="item1" className="w-10 h-full object-cover mr-2 grayscale opacity-20 hover:grayscale-0 hover:opacity-100 rounded-xl" />
+                <img src={item.item2} alt="item2" className="w-10 h-full object-cover grayscale opacity-20 hover:grayscale-0 hover:opacity-100 rounded-xl" />
+              </div>
             </div>
 
-            <button className="bg-[#dcfc38] p-2 mt-4 rounded-xl font-semibold text-black shadow-xl/10 hover:bg-[#aaff00]">
+            <button className="bg-[#dcfc38] p-2 mt-4 rounded-xl font-semibold text-black hover:bg-[#aaff00] w-full">
               Details
             </button>
           </div>
@@ -106,53 +122,3 @@ export default function HomePage() {
     </div>
   );
 }
-=======
-import Link from "next/link";
-
-import DataJson from "../utils/data.json";
-
-export default function HomePage() {
-  console.log(DataJson);
-  return (
-    <div className="bg-gray-300  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 p-6 ">
-      {DataJson.map((item) => (
-        <div className="w-70 h-80 bg-white rounded-4xl p-5 text-black font-mono shadow-xl/10">
-          <p className="font-semibold bg-purple-200 rounded-full pr-2 text-purple-500 mb-3 flex justify-end">
-            {item.type}
-          </p>
-          <p className="flex">
-            <p className="font-bold mr-2">{"First Name:"}</p>
-            {item.first_name}
-          </p>
-          <p className="flex">
-            <p className="font-bold mr-2 mb-4">{"Last Name:"}</p>
-            {item.last_name}
-          </p>
-          <p className="ml-5 flex ">
-            <p className="mr-2 font-semibold">Age :</p>
-            {item.age}
-          </p>
-          <p className="ml-5 flex ">
-            <p className="mr-2 font-semibold">Country :</p>
-            {item.country}
-          </p>
-          <p className="ml-5 flex ">
-            <p className="mr-2 font-semibold">Points :</p>
-            {item.point}
-          </p>
-          <p className="mt-5 flex ">
-            <p className="mr-2 font-semibold">Created at :</p>
-            <p className="opacity-50">{item.created_at}</p>
-          </p>
-          <button className="bg-purple-500 p-2 mt-4 rounded-xl font-semibold text-white shadow-xl/10 hover:bg-orange-300">
-            Details
-          </button>
-        </div>
-      ))}
-
-      {/* DataJson.map((user, index) => ( 
-            )) */}
-    </div>
-  );
-}
->>>>>>> 57cd141ee3bca4db98992e3555b039d614a3ebbf

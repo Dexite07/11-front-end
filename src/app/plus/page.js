@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+"use client";
 import DataJson from "../utils/province.json";
 
 export default function HomePage() {
