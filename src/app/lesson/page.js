@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import DataJson from "../utils/data.json";
+import DataJson from "../../utils/data.json";
 
 export default function HomePage() {
   const [search, setSearch] = useState("");

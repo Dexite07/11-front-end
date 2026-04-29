@@ -1,5 +1,5 @@
 "use client";
-import DataJson from "../utils/province.json";
+import DataJson from "../../utils/province.json";
 
 export default function HomePage() {
   console.log(DataJson);
