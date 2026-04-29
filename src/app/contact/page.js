@@ -39,10 +39,6 @@ export default function Home() {
         <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Users -</h2>
         </a>
         <hr className="opacity-50"></hr>
-        <a href="lesson">
-        <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Users -</h2>
-        </a>
-        <hr className="opacity-50"></hr>
       </div>
       <div className="w-4/5 h-full flex p-20">
       <div className="w-150 h-50 ">
