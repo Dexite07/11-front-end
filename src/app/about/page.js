@@ -35,7 +35,7 @@ export default function Home() {
         </a>
 
         <hr className="opacity-50"></hr>
-        <a href="lesson">
+        <a href="page.js">
         <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Users -</h2>
         </a>
         <hr className="opacity-50"></hr>

@@ -26,6 +26,7 @@ export default function Home() {
         <hr className="opacity-50"></hr>
 
         <a href="contact">
+          
           <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Contact Info -</h2>
         </a>
         
