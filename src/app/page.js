@@ -2,66 +2,90 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-[#dcfc38] w-screen h-screen flex flex-col">
-      <div className="bg-black w-full h-20 flex items-center pl-5">
+    <div className="bg-[#dcfc38] w-screen min-h-screen flex flex-col overflow-x-hidden">
+      {/* Navbar */}
+      <div className="bg-black w-full min-h-[80px] flex flex-col sm:flex-row items-center justify-between px-4 md:px-6 py-3 gap-3">
         <a href="home">
- <p className="font-mono text-2xl ml-50">Chartreused |</p>
-        </a>
-        
-         <div className="w-50 h-2/5 bg-white rounded-full ml-5 flex items-center pl-1">
-         <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5" alt="Search"></img>
-         <p className="text-gray-800 font-mono font-thin ml-1">Search . . .</p>
-         </div>
-      </div>
-      <div className="w-full h-full flex ">
-      <div className="bg-[#141414] w-1/5 h-full p-5 pl-10 pr-10">
-        <h2 className="font-mono text-2xl font-semibold pt-8 pb-10">Other stuff idk.</h2>
-        <a href="about">
-          <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">About -</h2>
-        </a>
-        
-        <hr className="opacity-50"></hr>
-        <a href="contentshehe">
-                  <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Contents -</h2>
+          <p className="font-mono text-lg sm:text-xl md:text-2xl whitespace-nowrap">
+            Chartreused |
+          </p>
         </a>
 
-        <hr className="opacity-50"></hr>
-
-        <a href="contact">
-          <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Contact Info -</h2>
-        </a>
-        
-        <hr className="opacity-50"></hr>
-        <a href="notfound">
-        <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Help -</h2>
-        </a>
-
-        <hr className="opacity-50"></hr>
-
-        <a href="lesson">
-        <h2 className="font-mono font-thin text-xl pt-2 pb-2 hover:font-semibold">Users -</h2>
-        </a>
-        <hr className="opacity-50"></hr>
-      </div>
-      <div className="w-4/5 h-full flex p-20">
-      <div className="w-150 h-50 ">
-        <h1 className="text-8xl text-[#141414] font-mono font-extrabold">Welcome to Chartreused.</h1>
-        <div className="w-80 h-full">
-          <p className="text-[#141414] font-mono mt-5"> We&apos;ve built an extraordinary platform for people who wants to expand their music territory.</p>
+        <div className="w-full sm:w-[220px] md:w-[260px] h-10 bg-white rounded-full flex items-center px-3">
+          <img
+            src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png"
+            className="w-4 h-4 md:w-5 md:h-5"
+            alt="Search"
+          />
+          <p className="text-gray-800 font-mono font-thin ml-2 text-sm md:text-base truncate">
+            Search . . .
+          </p>
         </div>
-        <p className="text-black font-mono font-bold text-xl mt-60 ml-110 absolute">Bewitched - Studio Album</p>
-        <p className="text-black font-mono font-regular text-lg mt-70 ml-157 absolute">By Laufey</p>
-        
-      </div>
-      <div className="w-140 h-140 bg-black ml-50 mt-40 shadow-xl/40">
-        <img src="https://i.scdn.co/image/ab67616d0000b27374c732f8aa0e0ccbb3d17d96"></img>
-      </div>
-      
-      
-      </div>
       </div>
 
+      {/* Main Layout */}
+      <div className="w-full flex flex-col lg:flex-row flex-1">
+        {/* Sidebar */}
+        <div className="bg-[#141414] w-full lg:w-[20%] xl:w-[18%] h-auto p-5 md:p-8 lg:p-10">
+          <h2 className="font-mono text-xl md:text-2xl font-semibold pb-6 md:pb-10">
+            Other stuff idk.
+          </h2>
 
+          {[
+            ["about", "About -"],
+            ["contentshehe", "Contents -"],
+            ["contact", "Contact Info -"],
+            ["notfound", "Help -"],
+            ["lesson", "Users -"],
+          ].map(([link, text]) => (
+            <div key={link}>
+              <a href={link}>
+                <h2 className="font-mono font-thin text-base md:text-lg lg:text-xl py-2 hover:font-semibold">
+                  {text}
+                </h2>
+              </a>
+              <hr className="opacity-50" />
+            </div>
+          ))}
+        </div>
+
+        {/* Main Content */}
+        <div className="w-full lg:w-[80%] xl:w-[82%] flex flex-col xl:flex-row items-center justify-center px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-10 gap-10 xl:gap-16">
+          {/* Text Section */}
+          <div className="w-full xl:w-1/2 text-center xl:text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#141414] font-mono font-extrabold leading-tight break-words">
+              Welcome to Chartreused.
+            </h1>
+
+            <div className="w-full max-w-md mx-auto xl:mx-0">
+              <p className="text-[#141414] font-mono mt-5 text-sm sm:text-base md:text-lg">
+                We&apos;ve built an extraordinary platform for people who want to
+                expand their music territory.
+              </p>
+            </div>
+
+            <div className="mt-8 md:mt-12 xl:mt-20">
+              <p className="text-black font-mono font-bold text-lg md:text-xl">
+                Bewitched - Studio Album
+              </p>
+              <p className="text-black font-mono text-base md:text-lg">
+                By Laufey
+              </p>
+            </div>
+          </div>
+
+          {/* Album Cover */}
+          <div className="w-full xl:w-1/2 flex justify-center">
+            <div className="w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[550px] xl:h-[550px] bg-black shadow-xl">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b27374c732f8aa0e0ccbb3d17d96"
+                className="w-full h-full object-cover"
+                alt="Album Cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   );
 }
