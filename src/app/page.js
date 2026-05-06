@@ -3,10 +3,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-[#dcfc38] w-screen min-h-screen flex flex-col overflow-x-hidden">
+      
       {/* Navbar */}
       <div className="bg-black w-full min-h-[80px] flex flex-col sm:flex-row items-center justify-between px-4 md:px-6 py-3 gap-3">
-        <a href="home">
-          <p className="font-mono text-lg sm:text-xl md:text-2xl whitespace-nowrap">
+        <a href="/">
+          <p className="font-mono text-lg sm:text-xl md:text-2xl whitespace-nowrap text-white">
             Chartreused |
           </p>
         </a>
@@ -25,9 +26,10 @@ export default function Home() {
 
       {/* Main Layout */}
       <div className="w-full flex flex-col lg:flex-row flex-1">
+        
         {/* Sidebar */}
         <div className="bg-[#141414] w-full lg:w-[20%] xl:w-[18%] h-auto p-5 md:p-8 lg:p-10">
-          <h2 className="font-mono text-xl md:text-2xl font-semibold pb-6 md:pb-10">
+          <h2 className="font-mono text-xl md:text-2xl font-semibold pb-6 md:pb-10 text-white">
             Other stuff idk.
           </h2>
 
@@ -40,17 +42,18 @@ export default function Home() {
           ].map(([link, text]) => (
             <div key={link}>
               <a href={link}>
-                <h2 className="font-mono font-thin text-base md:text-lg lg:text-xl py-2 hover:font-semibold">
+                <h2 className="font-mono font-thin text-base md:text-lg lg:text-xl py-2 text-gray-200 hover:text-white hover:font-semibold transition-all duration-200">
                   {text}
                 </h2>
               </a>
-              <hr className="opacity-50" />
+              <hr className="opacity-30 border-gray-500" />
             </div>
           ))}
         </div>
 
         {/* Main Content */}
         <div className="w-full lg:w-[80%] xl:w-[82%] flex flex-col xl:flex-row items-center justify-center px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-10 gap-10 xl:gap-16">
+          
           {/* Text Section */}
           <div className="w-full xl:w-1/2 text-center xl:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#141414] font-mono font-extrabold leading-tight break-words">

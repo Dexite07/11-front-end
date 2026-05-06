@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="bg-[#dcfc38] w-screen h-screen flex flex-col">
       <div className="bg-black w-full h-20 flex items-center pl-5">
-<a href="">
+<a href="/">
  <p className="font-mono text-2xl ml-50">Chartreused |</p>
         </a>         <div className="w-50 h-2/5 bg-white rounded-full ml-5 flex items-center pl-1">
          <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png" className="w-5 h-5" alt="Search"></img>
