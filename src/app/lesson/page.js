@@ -17,7 +17,7 @@ export default function HomePage() {
     <div className="w-screen min-h-screen bg-[#141414] overflow-x-hidden">
       <header>
         <div className="bg-black w-full min-h-[80px] flex flex-col sm:flex-row items-center justify-between px-4 md:px-6 py-3 fixed top-0 z-10 gap-3">
-          <a href="/">
+          <a href="home">
             <p className="font-mono text-lg sm:text-xl md:text-2xl whitespace-nowrap text-white">
               Chartreused |
             </p>

@@ -5,7 +5,7 @@ export default function NotFound() {
     <div className="bg-[#dcfc38] w-screen min-h-screen flex items-center justify-center overflow-x-hidden relative px-4">
       {/* Navbar */}
       <div className="bg-black w-full min-h-[80px] flex flex-col sm:flex-row items-center justify-between px-4 md:px-6 py-3 absolute top-0 z-10 gap-3">
-        <a href="/">
+        <a href="home">
           <p className="font-mono text-lg sm:text-xl md:text-2xl text-white whitespace-nowrap">
             Chartreused |
           </p>
